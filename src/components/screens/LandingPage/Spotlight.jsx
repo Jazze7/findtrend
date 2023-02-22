@@ -19,7 +19,9 @@ export default function Spotlight() {
                                         src={
                                             require("../../../assets/images/findtrend.svg")
                                                 .default
+                                                
                                         }
+                                        alt="logo"
                                     />
                                 </LogoContainer>
                             </NavLeft>
@@ -74,6 +76,7 @@ export default function Spotlight() {
                                             require("../../../assets/images/fire.svg")
                                                 .default
                                         }
+                                        alt="fire image"
                                     />
                                 </FireContainer>
                             </ButtonContainer>
@@ -83,6 +86,7 @@ export default function Spotlight() {
                                         require("../../../assets/images/arrowithtext.svg")
                                             .default
                                     }
+                                    alt="arrow with text"
                                 />
                             </TextImageContainer>
                         </MiddlePortion>
@@ -90,11 +94,14 @@ export default function Spotlight() {
                             <ImageContainer>
                                 <Image
                                     src={require("../../../assets/images/frame1.png")}
+                                    alt="frame of social media"
                                 />
                             </ImageContainer>
                             <ImageContainer>
                                 <Image
                                     src={require("../../../assets/images/frame2.png")}
+                                    alt="frame of social media"
+
                                 />
                             </ImageContainer>
                             <ImageContainer>
@@ -105,6 +112,8 @@ export default function Spotlight() {
                             <ImageContainer>
                                 <Image
                                     src={require("../../../assets/images/frame4.png")}
+                                    alt="frame of social media"
+
                                 />
                             </ImageContainer>
                         </BottomPortion>
@@ -118,8 +127,8 @@ const Home = styled.section`
     background: url(${spotlightimage});
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    width: 100vw;
+    padding-bottom:100px;
+
 `;
 const Wrapper = styled.div`
     width: 90%;
@@ -182,12 +191,14 @@ const SubHeading = styled.h6`
     color: #777;
     font-size: 16px;
     width: 65%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 80px auto;
     text-align: center;
     line-height: 1.5;
 `;
 const MiddlePortion = styled.div`
     position: relative;
+    margin-bottom: 100px;
+
 `;
 const ButtonContainer = styled.div`
     background: var(--theme-color);
@@ -198,7 +209,6 @@ const ButtonContainer = styled.div`
     margin: 0 auto;
     padding: 15px 20px;
     border-radius: 30px;
-    margin-bottom: 60px;
 `;
 const ButtonName = styled.span`
     display: block;

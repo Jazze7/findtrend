@@ -4,12 +4,12 @@ import React from 'react'
 import { Route, Routes } from "react-router-dom";
 
 // components
-import Spotlight from '../../screens/LandingPage/Spotlight';
+import HomePage from '../../screens/HomePage';
 
 export default function MainRouter() {
   return (
   <Routes>
-    <Route  exact path="/" element={<Spotlight/>}></Route>
+    <Route  exact path="/" element={<HomePage/>}></Route>
   </Routes>
   )
 }
