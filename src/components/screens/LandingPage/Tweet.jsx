@@ -50,41 +50,83 @@ export default function Tweet() {
                     );
                 })}
             </SocialContainer>
-            <TweeterContainer>
-                <Tweeter
-                    src={require("../../../assets/images/tweet.jpg")}
-                    alt="tweet"
-                />
-            </TweeterContainer>
-            <TeslaTweetContainer>
-                <TeslaTweet
-                    src={require("../../../assets/images/teslatweet.jpg")}
-                    alt="tweet"
-                />
-            </TeslaTweetContainer>
-            <TweeterContainer>
-                <Tweeter
-                    src={require("../../../assets/images/tweet.jpg")}
-                    alt="tweet"
-                />
-            </TweeterContainer>
-            <Registration>
-                <Anchor>Register</Anchor>
-            </Registration>
+            <TweetSection>
+                <TweeterContainer>
+                    <Tweeter
+                        src={require("../../../assets/images/tweet.jpg")}
+                        alt="tweet"
+                    />
+                </TweeterContainer>
+                <TeslaTweetContainer>
+                    <TeslaTweet
+                        src={require("../../../assets/images/teslatweet.jpg")}
+                        alt="tweet"
+                    />
+                </TeslaTweetContainer>
+                <TweeterContainer className="tweet">
+                    <Tweeter
+                        src={require("../../../assets/images/tweet.jpg")}
+                        alt="tweet"
+                    />
+                </TweeterContainer>
+                <Registration>
+                    <Anchor>Register</Anchor>
+                </Registration>
+            </TweetSection>
         </MainContainer>
     );
 }
 const MainContainer = styled.section`
     background-color: #f5f5f5;
+    padding: 100px;
 `;
-const Head = styled.h1``;
-const SocialContainer = styled.div``;
-const BrandContainer = styled.div``;
+const Head = styled.h1`
+    font-size: 56px;
+    font-family: "InterBold";
+    text-align: center;
+    margin-bottom: 80px;
+`;
+const SocialContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+`;
+const BrandContainer = styled.div`
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    :hover {
+        background-color: var(--theme-color);
+    }
+`;
 const ImageContainer = styled.div``;
 const Brand = styled.img``;
-const TweeterContainer = styled.div``;
+const TweetSection = styled.div`
+    width: 60%;
+    margin: 0 auto;
+`;
+const TweeterContainer = styled.div`
+    margin-bottom: 25px;
+    &.tweet {
+        margin-bottom: 50px;
+    }
+`;
 const Tweeter = styled.img``;
-const TeslaTweetContainer = styled.div``;
-const Registration = styled.div``;
-const Anchor = styled.a``;
+const TeslaTweetContainer = styled.div`
+    margin-bottom: 25px;
+`;
+const Registration = styled.div`
+    background-color: #000;
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 20%;
+    margin: 0 auto;
+`;
+const Anchor = styled.a`
+    color: #fff;
+    font-family: "InterSemiBold";
+    text-align: center;
+    display: block;
+`;
 const TeslaTweet = styled.img``;
