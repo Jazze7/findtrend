@@ -84,11 +84,16 @@ const MainContainer = styled.section`
     @media all and (max-width: 768px) {
         padding: 60px 0;
     }
-
+    @media all and (max-width: 480px) {
+        padding: 40px 0;
+    }
 `;
 const Wrapper = styled.div`
     width: 80%;
     margin: 0 auto;
+    @media all and (max-width: 480px) {
+        width: 85%;
+    }
 `;
 const Head = styled.h1`
     font-size: 56px;
@@ -106,6 +111,9 @@ const Head = styled.h1`
     @media all and (max-width: 768px) {
         font-size: 32px;
     }
+    @media all and (max-width: 480px) {
+        font-size: 26px;
+    }
 `;
 const SocialContainer = styled.div`
     display: grid;
@@ -113,9 +121,8 @@ const SocialContainer = styled.div`
     gap: 30px;
     margin-bottom: 50px;
     @media all and (max-width: 768px) {
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
-
 `;
 const BrandContainer = styled.div`
     background-color: #fff;
@@ -136,7 +143,12 @@ const BrandContainer = styled.div`
     @media all and (max-width: 768px) {
         padding: 25px;
     }
-
+    @media all and (max-width: 640px) {
+        padding: 20px;
+    }
+    @media all and (max-width: 480px) {
+        padding: 10px
+    }
 `;
 const ImageContainer = styled.div``;
 const Brand = styled.img``;
@@ -152,11 +164,17 @@ const TweetSection = styled.div`
     @media all and (max-width: 768px) {
         width: 85%;
     }
+    @media all and (max-width: 640px) {
+        width: 100%;
+    }
 `;
 const TweeterContainer = styled.div`
     margin-bottom: 25px;
     &.tweet {
         margin-bottom: 50px;
+        @media all and (max-width: 640px) {
+        margin-bottom: 30px;
+    }
     }
 `;
 const Tweeter = styled.img``;
@@ -174,6 +192,8 @@ const Registration = styled.div`
     }
     @media all and (max-width: 980px) {
         width: 32%;
+    }  @media all and (max-width: 640px) {
+        padding: 15px;
     }
 `;
 const Anchor = styled.a`
@@ -181,5 +201,8 @@ const Anchor = styled.a`
     font-family: "InterSemiBold";
     text-align: center;
     display: block;
+    @media all and (max-width: 480px) {
+       font-size: 14px;
+    }
 `;
 const TeslaTweet = styled.img``;

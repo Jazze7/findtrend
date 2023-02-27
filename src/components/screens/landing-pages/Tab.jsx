@@ -47,6 +47,9 @@ const MainContainer = styled.section`
     @media all and (max-width: 768px) {
         padding: 50px 0;
     }
+    @media all and (max-width: 480px) {
+        padding: 40px 0;
+    }
 `;
 const Heading = styled.h1`
     font-family: "InterBold";
@@ -60,7 +63,12 @@ const Heading = styled.h1`
         margin-bottom: 40px;
         font-size: 42px;
     }
-
+    @media all and (max-width: 640px) {
+        font-size: 33px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 26px;
+    }
 `;
 const MiddlePortion = styled.div`
     position: relative;
@@ -90,6 +98,9 @@ const ImageContainer = styled.div`
         width: 12%;
         right: 17%;
     }
+    @media all and (max-width: 480px) {
+        display: none;
+    }
 `;
 const Image = styled.img``;
 const TagContainer = styled.div`
@@ -106,6 +117,9 @@ const TagContainer = styled.div`
     }
     @media all and (max-width: 768px) {
         width: 35%;
+    }
+    @media all and (max-width: 480px) {
+        width: 65%;
     }
 `;
 const FrameContainer = styled.div`
@@ -129,5 +143,13 @@ const Para = styled.div`
     @media all and (max-width: 768px) {
         width: 70%;
         line-height: 1.8em;
+    }
+    @media all and (max-width: 640px) {
+        width: 80%;
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 12px;
     }
 `;

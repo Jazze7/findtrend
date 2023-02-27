@@ -36,20 +36,37 @@ const FooterContainer = styled.footer``;
 const Wrapper = styled.div`
     width: 80%;
     margin: 0 auto;
+    @media all and (max-width: 640px) {
+        width: 90%;
+    }
 `;
 const FooterContent = styled.div`
     display: flex;
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    @media all and (max-width: 480px) {
+      justify-content: center;
+      height: 70px;
+    }
+
 `;
 const FooterLogo = styled.h1`
-    width: 50%;
+    width: 40%;
+    @media all and (max-width: 480px) {
+        width: 80%;
+    }
 `;
 const FooterLogoContainer = styled.a`
     display: block;
     width: 40%;
     @media all and (max-width: 980px) {
+        width: 50%;
+    }
+    @media all and (max-width: 768px) {
+        width: 75%;
+    }
+    @media all and (max-width: 480px) {
         width: 50%;
     }
 `;
@@ -64,6 +81,16 @@ const Nav = styled.ul`
     @media all and (max-width: 980px) {
         width: 60%;
     }
+    @media all and (max-width: 480px) {
+        display: none;
+    }
 `;
 const Menu = styled.li``;
-const Anchor = styled.a``;
+const Anchor = styled.a`
+    @media all and (max-width: 768px) {
+        font-size: 16px;
+    }
+    @media all and (max-width: 640px) {
+        font-size: 14px;
+    }
+`;

@@ -17,6 +17,15 @@ export default function Join() {
 const MainContainer = styled.section`
     background: var(--theme-color);
     padding: 100px 0;
+    @media all and (max-width: 768px) {
+        padding: 60px 0;
+    }
+    @media all and (max-width: 640px) {
+        padding: 50px 0;
+    }
+    @media all and (max-width: 360px){
+        padding: 40px 0;
+}
 `;
 const Head = styled.h1`
     font-size: 52px;
@@ -27,6 +36,12 @@ const Head = styled.h1`
     }
     @media all and (max-width: 980px) {
         font-size: 38px;
+    }
+    @media all and (max-width: 640px) {
+        font-size: 32px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 28px;
     }
 `;
 const SubHead = styled.h2`
@@ -40,6 +55,13 @@ const SubHead = styled.h2`
     }
     @media all and (max-width: 980px) {
         font-size: 40px;
+    }
+    @media all and (max-width: 640px) {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 28px;
     }
 `;
 const Registration = styled.div`
@@ -55,7 +77,14 @@ const Registration = styled.div`
         width: 13%;
     }
     @media all and (max-width: 980px) {
-        width:22%;
+        width: 22%;
+    }
+    @media all and (max-width: 640px) {
+        width: 30%;
+        padding: 15px 25px;
+    }
+    @media all and (max-width: 480px) {
+        padding: 12px 20px;
     }
 `;
 const Anchor = styled.a`
@@ -63,4 +92,7 @@ const Anchor = styled.a`
     font-family: "InterSemiBold";
     text-align: center;
     display: block;
+    @media all and (max-width: 480px) {
+        font-size: 14px;
+    }
 `;

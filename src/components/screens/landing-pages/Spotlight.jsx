@@ -145,6 +145,12 @@ const NavLeft = styled.h1`
     @media all and (max-width: 768px) {
         width: 30%;
     }
+    @media all and (max-width: 640px) {
+        width: 40%;
+    }
+    @media all and (max-width: 360px){
+        width: 50%;
+}
 `;
 const LogoContainer = styled.a`
     display: block;
@@ -210,6 +216,9 @@ const HamburgerContainer = styled.div`
         display: block;
         width: 15%;
     }
+    @media all and (max-width: 360px){
+        width: 20%;
+}
 `;
 const HamburgerImage = styled.img``;
 const HomePage = styled.section`
@@ -226,6 +235,12 @@ const Heading = styled.h2`
     }
     @media all and (max-width: 768px) {
         font-size: 45px;
+    }
+    @media all and (max-width: 640px) {
+        font-size: 38px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 28px;
     }
 `;
 const SubHeading = styled.h6`
@@ -248,10 +263,19 @@ const SubHeading = styled.h6`
         font-size: 12px;
         margin: 0 auto 40px auto;
     }
+    @media all and (max-width: 640px) {
+        font-size: 11px;
+    }
+    @media all and (max-width: 480px) {
+        width: 90%;
+    }
 `;
 const MiddlePortion = styled.div`
     position: relative;
     margin-bottom: 100px;
+    @media all and (max-width: 640px) {
+        margin-bottom: 60px;
+    }
 `;
 const ButtonContainer = styled.div`
     background: var(--theme-color);
@@ -271,10 +295,20 @@ const ButtonContainer = styled.div`
     @media all and (max-width: 768px) {
         width: 28%;
     }
+    @media all and (max-width: 640px) {
+        width: 37%;
+        padding: 10px 15px;
+    }
+    @media all and (max-width: 480px) {
+        width: 46%;
+    }
 `;
 const ButtonName = styled.span`
     display: block;
     font-family: "InterBold";
+    @media all and (max-width: 360px){
+        font-size: 14px;
+}
 `;
 const FireContainer = styled.div``;
 const Fire = styled.img``;
@@ -296,6 +330,14 @@ const TextImageContainer = styled.div`
         width: 14%;
         right: 18%;
     }
+    @media all and (max-width: 640px) {
+        width: 18%;
+        right: 10%;
+    }
+    @media all and (max-width: 480px) {
+        width: 22%;
+        right: 2%;
+    }
 `;
 const TextImage = styled.img``;
 const BottomPortion = styled.ul`
@@ -306,6 +348,12 @@ const BottomPortion = styled.ul`
     margin: 0 auto;
     @media all and (max-width: 768px) {
         width: 80%;
+    }
+    @media all and (max-width: 640px) {
+        width: 95%;
+    }
+    @media all and (max-width: 480px) {
+        width: 100%;
     }
 `;
 const ImageContainer = styled.li`
@@ -330,7 +378,5 @@ const ImageContainer = styled.li`
         right: 4%;
         width: 25%;
     }
-
-
 `;
 const Image = styled.img``;

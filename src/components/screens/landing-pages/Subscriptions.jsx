@@ -132,6 +132,15 @@ const MainContainer = styled.section`
     @media all and (max-width: 1080px) {
         padding: 80px 0;
     }
+    @media all and (max-width: 768px) {
+        padding: 60px 0;
+    }
+    @media all and (max-width: 640px) {
+        padding: 50px 0;
+    }
+    @media all and (max-width: 480px) {
+        padding: 40px 0;
+    }
 `;
 const Wrapper = styled.div`
     width: 75%;
@@ -141,6 +150,9 @@ const Wrapper = styled.div`
     }
     @media all and (max-width: 980px) {
         width: 85%;
+    }
+    @media all and (max-width: 640px) {
+        width: 75%;
     }
 `;
 const Head = styled.h1`
@@ -153,6 +165,16 @@ const Head = styled.h1`
         font-size: 48px;
         margin-bottom: 40px;
     }
+    @media all and (max-width: 640px) {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    @media all and (max-width: 480px) {
+      font-size: 30px;
+    }
+    @media all and (max-width: 360px){
+        font-size: 26px;
+}
 `;
 const SwitchContainer = styled.div`
     display: flex;
@@ -163,12 +185,27 @@ const SwitchContainer = styled.div`
     @media all and (max-width: 980px) {
         width: 55%;
     }
+    @media all and (max-width: 640px) {
+        width: 65%;
+    }
+    @media all and (max-width: 480px) {
+        width: 75%;
+    }
+    @media all and (max-width: 360px){
+        width: 85%;
+}
 `;
 const Month = styled.span`
     color: #fff;
     font-size: 16px;
     &.light {
         color: #777;
+    }
+    @media all and (max-width: 640px) {
+        font-size: 14px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 12px;
     }
 `;
 const ButtonContainer = styled.div`
@@ -180,6 +217,15 @@ const ButtonContainer = styled.div`
     @media all and (max-width: 1080px) {
         width: 25%;
     }
+    @media all and (max-width: 640px) {
+        height: 32px;
+    }
+    @media all and (max-width: 480px) {
+        width: 28%;
+    }
+    @media all and (max-width: 360px){
+        width: 30%;
+}
 `;
 const Button = styled.div`
     padding: 18px;
@@ -196,12 +242,18 @@ const Button = styled.div`
             left: 50%;
         }
     }
+    @media all and (max-width: 640px) {
+        padding: 14px;
+    }
 `;
 const Year = styled.span`
     color: #fff;
     font-size: 16px;
     &.light {
         color: #777;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 12px;
     }
 `;
 const ImageContainer = styled.div`
@@ -217,6 +269,13 @@ const Card = styled.div`
     gap: 30px;
     @media all and (max-width: 1280px) {
         gap: 20px;
+    }
+    @media all and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    @media all and (max-width: 640px) {
+        grid-template-columns: 1fr;
     }
 `;
 const CardContainer = styled.div`
@@ -236,6 +295,12 @@ const CardContainer = styled.div`
     @media all and (max-width: 980px) {
         padding: 20px 10px;
     }
+    @media all and (max-width: 768px) {
+        padding: 30px 25px;
+    }
+    @media all and (max-width: 640px) {
+        padding: 30px;
+    }
 `;
 const CardTitle = styled.h3`
     font-family: "InterBold";
@@ -247,7 +312,9 @@ const CardTitle = styled.h3`
     @media all and (max-width: 980px) {
         font-size: 30px;
     }
-
+    @media all and (max-width: 640px) {
+        font-size: 34px;
+    }
 `;
 const CardSubtitle = styled.h6`
     font-size: 16px;
@@ -257,8 +324,12 @@ const CardSubtitle = styled.h6`
     }
     @media all and (max-width: 980px) {
         font-size: 12px;
+        @media all and (max-width: 640px) {
+            font-size: 16px;
+        }
     }
 `;
+
 const Line = styled.hr`
     border: 1px solid #f5f5f5;
     margin-bottom: 20px;
@@ -271,12 +342,19 @@ const Price = styled.h4`
         font-size: 50px;
         margin-bottom: 20px;
     }
+    @media all and (max-width: 640px) {
+        font-size: 56px;
+        margin-bottom: 30px;
+    }
 `;
 const Duration = styled.span`
     font-family: "InterRegular";
     font-size: 20px;
     @media all and (max-width: 980px) {
         font-size: 18px;
+    }
+    @media all and (max-width: 640px) {
+        font-size: 20px;
     }
 `;
 const TickArrowBox = styled.div`
@@ -296,10 +374,26 @@ const TickArrowBox = styled.div`
         @media all and (max-width: 980px) {
             margin-bottom: 35px;
         }
+        @media all and (max-width: 768px) {
+            margin-bottom: 50px;
+        }
+        @media all and (max-width: 640px) {
+            margin-bottom: 60px;
+        }
+
+    }
+    @media all and (max-width: 640px) {
+            width: 75%;
+        }
+        @media all and (max-width: 480px) {
+        width: 90%;
     }
 `;
 const Tick = styled.img`
     width: 7%;
+    @media all and (max-width: 640px) {
+        width: 8%;
+    }
 `;
 const MiddlePara = styled.h6`
     font-size: 20px;
@@ -312,6 +406,18 @@ const MiddlePara = styled.h6`
     @media all and (max-width: 980px) {
         font-size: 12px;
     }
+    @media all and (max-width: 768px) {
+        font-size: 14px;
+    }
+    @media all and (max-width: 640px) {
+        font-size: 16px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 14px;
+    }
+    @media all and (max-width: 360px){
+        font-size: 12px;
+}
 `;
 const ButtonContent = styled.div`
     text-align: center;

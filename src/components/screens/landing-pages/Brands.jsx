@@ -101,7 +101,10 @@ export default function Brands() {
 const MainContainer = styled.section`
     padding: 100px 0;
     @media all and (max-width: 768px) {
-        padding: 80px 0;
+        padding: 60px 0;
+    }
+    @media all and (max-width: 480px) {
+        padding: 40px 0;
     }
 `;
 
@@ -113,6 +116,9 @@ const Wrapper = styled.div`
     }
     @media all and (max-width: 768px) {
         width: 90%;
+    }
+    @media all and (max-width: 480px) {
+       width: 85%;
     }
 `;
 const Heading = styled.h2`
@@ -132,6 +138,17 @@ const Heading = styled.h2`
         font-size: 28px;
         margin-bottom: 60px;
     }
+    @media all and (max-width: 768px) {
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+    @media all and (max-width: 360px){
+        font-size: 18px;
+}
 `;
 const Decorate = styled.span`
     color: #60625d;
@@ -150,6 +167,13 @@ const SubHead = styled.h4`
     @media all and (max-width: 768px) {
         font-size: 32px;
     }
+    @media all and (max-width: 768px) {
+        font-size: 23px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
 `;
 const Content = styled.ul`
     display: grid;
@@ -158,6 +182,9 @@ const Content = styled.ul`
     width: 100%;
     @media all and (max-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
+    }
+    @media all and (max-width: 480px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 `;
 const BrandContainer = styled.li`
@@ -168,6 +195,15 @@ const BrandContainer = styled.li`
         @media all and (max-width: 768px) {
             display: none;
         }
+        @media all and (max-width: 480px) {
+            display: block;
+        }
+    }
+    @media all and (max-width: 768px) {
+        padding: 20px;
+    }
+    @media all and (max-width: 480px) {
+        padding: 25px;
     }
 `;
 const ImageContainer = styled.div`
